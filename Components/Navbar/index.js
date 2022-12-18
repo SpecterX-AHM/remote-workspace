@@ -20,6 +20,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import GroupIcon from '@material-ui/icons/Group';
 import NoteAddIcon from '@material-ui/icons/NoteAdd';
+import PersonalVideoIcon from '@material-ui/icons/PersonalVideo';
 import VideoCallIcon from '@material-ui/icons/VideoCall';
 import ChatIcon from '@material-ui/icons/Chat';
 import Avatar from '@material-ui/core/Avatar';
@@ -214,24 +215,14 @@ const Navbar = (props)=> {
                     </div>
                     </Link>
                 </ListItem>
-                <ListItem button key='Chat'>
-                    <Link href="/chat" passHref>
+                <ListItem button key='My Personal Dashboard'>
+                    <Link href="/personalDashboard" passHref>
                     <div>
-                    <ListItemIcon><ChatIcon /></ListItemIcon>
-                    <ListItemText primary='Chat' />
+                    <ListItemIcon><PersonalVideoIcon/></ListItemIcon>
+                    <ListItemText primary='My Dashboard' />
                     </div>
                     </Link>
                 </ListItem>
-
-                <ListItem button key='Notes'>
-                    <Link href="/notes" passHref>
-                    <div>
-                    <ListItemIcon><NoteAddIcon /></ListItemIcon>
-                    <ListItemText primary='Notes' />
-                    </div>
-                    </Link>
-                </ListItem>
-
                 <ListItem button key='Teams'>
                     <Link href="/teams" passHref>
                     <div>
